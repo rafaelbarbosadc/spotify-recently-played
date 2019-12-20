@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Info container */
+.info-container {
+  width: 100vw;
+  height: 40vw;
+  background: linear-gradient(90deg, #C074B2, #8AB5E8);
+  color: #fff;
+}
+
+.shadow-container {
+  background: linear-gradient(transparent, #000);
+  width: 100vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Recently played */
+.recent-text {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  width: 30%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.recent-text * {
+  margin: 0px 0px 15px 0px;
+}
+
+.recent-text > h1 {
+  font-size: 64px;
+}
+.recent-text > h2 {
+  font-size: 18px;
+}
+.recent-text > h3 {
+  font-size: 14px;
+}
+
+.button {
+  text-align: center;
+  background-color: #1DB954;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 45px;
+  border-radius: 25px;
+  transition: background ease-in 0.2s;
+}
+
+.button:hover {
+  background: rgb(94, 196, 130);
+}
+
+
+/* Albuns */
+
+.albums-container {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.album {
+  width: 225px;
+  height: 225px;
+  margin-right: 5px;
+  box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3)
+}
+
+.album > img {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-down {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: action 0.7s infinite  alternate;
+  animation: action .7s infinite  alternate;
+}
+
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
